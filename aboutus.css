@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+  min-width: 431px;
+  
+}
+header {
+  height: 259px;
+  background-color: #f3f6f9;
+}
+.ab_wrapper {
+  max-width: 1230px;
+  margin: 80px auto;
+  padding: 0 15px;
+}
+.ab_wrapper .ab_container h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #222;
+}
+.ab_wrapper .ab_container p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #424242;
+}
+.ab_wrapper .ab1 h2 {
+  margin-bottom: 40px;
+}
+.ab_wrapper .ab1 span {
+  font-weight: 500;
+}
+.ab_wrapper .ab1 .sloganTxt1 {
+  margin-bottom: 15px;
+}
+.ab_wrapper .ab1 .sloganTxt2 {
+  margin-bottom: 70px;
+}

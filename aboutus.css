@@ -1,7 +1,53 @@
 @charset "utf-8";
 
-/* body { 
-} */
+/* header */
+
+header {
+  width: 100%; height: 259px;
+  background-color: #f3f6f9;
+}
+header #head_logo {/*로고*/
+  width:100%;
+  position: fixed;
+  top:40px; left:40px;
+  cursor: pointer;
+  z-index: 9999;
+}
+header #head_menu {/*버튼*/
+  width:40px; height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50%;
+  background-color: #fff;
+  position: fixed;
+  top: 40px; right: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
+  z-index: 9999;
+}
+.sub_title {
+  width: 100%; height: 259px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 9;
+}
+.subTitleWrap {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 110px 15px 0;
+}
+h1 {
+  font-family: 'Red Hat Display',sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+.sub_gnb {
+  width: 1200px; height: 168px;
+  line-height: 168px;
+}
+
+
+/* main */
 
 .clearfix::after {
   content: "";
@@ -9,29 +55,11 @@
   clear: both;
 }
 .ab_container {
-  position: absolute;
-  top: 259px;
   width: 100%;
   background-color: #fff;
+  position: relative;
+  z-index: 99;
 }
-
-/* header */
-header {
-  width: 100%; height: 259px;
-  background-color: #f3f6f9;
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 1070px;
-}
-header h1 {
-  font-family: 'Red Hat Display', sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  max-width: 1230px;
-  margin: 110px auto 0;
-
-}
-
-/* main */
 
 .ab_wrap {
   max-width: 1230px;
@@ -39,7 +67,8 @@ header h1 {
   padding: 0 15px;
 }
 .aboutUs1 {
-  margin: 80px 0 120px;
+  margin: 0 0 84px;
+  padding-top: 80px;
 }
 .ab_container h2 {
   font-family: 'Red Hat Display', sans-serif;
@@ -69,7 +98,7 @@ header h1 {
   width: 100%;
   border-top: 1px solid #dedede;
   padding: 50px 0;
-  margin: 15px;
+  margin: 15px 0;
 }
 .missionWrap {
   margin-bottom: 50px;
@@ -142,7 +171,7 @@ header h1 {
   
 }
 .aboutUs3 {
-  padding: 80px 0 150px;
+  padding: 80px 0 97px;
 }
 .aboutUs3 h2 {
   margin-bottom: 24px;
@@ -170,6 +199,7 @@ header h1 {
   vertical-align: middle;
   width: 100%;
   transition: all .5s;
+  ;
 }
 .slide_section .slidelist li a {
   display: block;
@@ -202,17 +232,30 @@ header h1 {
 }
 
 
-/* slider */
-.slide_section .slidelist .button {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  background-color: #003dab;
-  border: none;
-  border-radius: 3px;
-  position: absolute;
-  right: 90%;
-  top: 50px;
+.slide_section [id="slide1"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.slide_section [id="slide2"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.slide_section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.slide_section [id="slide4"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+
+
+/*  자동슬라이드 */
+
+@keyframes move {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-100%);}
+  50% {transform: translateX(-200%);}
+  75% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+  
+}
+
+.slidelist {
+  animation-name: move;
+  animation-delay: 2s;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 
@@ -222,8 +265,7 @@ header h1 {
 
 
 
-
-
+/* slider */
 
 .slick-dots {
   width: 80%;
@@ -231,7 +273,7 @@ header h1 {
   left: 20%;
   top: -28px;
   background-color: #fff;
-  
+  z-index: 9;
 }
 .slick-dots li {
   display: table-cell;
@@ -246,24 +288,10 @@ header h1 {
   border: none;
   border-radius: 3px;
 }
-/* #button1 {
+#button1 {
   background-color: #003dab;
   border-radius: 3px;
-} */
-
-.slide_section [id="slide1"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
-.slide_section [id="slide2"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
-.slide_section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
-.slide_section [id="slide4"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
-
-
-
-
-
-
-
-
-
+}
 
 
 /* footer */

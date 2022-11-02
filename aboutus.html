@@ -3,17 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello, This is team1_camelCase's project">
+    <meta name="keywords" content="웹, website, camelCase, team1_project, 크리에이티브파트너스, creativepartners">
+
     <title>크리에이티브 파트너스 | 스타트업, 크리에이터를 위한 세무회계 컨설팅펌</title>
     <link rel="stylesheet" href="./common/minireset.min.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./aboutus.css">
-    <link rel="stylesheet" href="./footer.css">
+
+        <!-- og -->
+    <meta property ="og:title" content="team1_camelCase">
+    <meta property ="og:url" content="#">
+    <meta property ="og:image" content="./images/header_img/logo.svg">
+    <meta property ="og:description" content="Hello, This is team1_camelCase's project">
+    <meta property ="og:type" content="website">
+
+    <!-- favicon -->
+    <link rel="icon" href="./favicon_io/favicon.ico" type="image/svg+xml">
+    
   </head>
   <body>
     <header>
-      <div class="ab_wrap">
-        <h1>ABOUT US</h1>
-      </div>
+        <a href="https://creativepartners.co.kr/" id="head_logo">
+          <img src="./images/header_img/logo.svg" alt="로고">
+        </a>
+        <a href="#" id="head_menu">
+          <img src="./images/header_img/front_menuicon.png" alt="메뉴">
+        </a>
+
+        <div class="sub_title">
+          <div class="subTitleWrap">
+            <h1>ABOUT US</h1>
+          </div>
+        </div>
     </header>
 
     <div class="ab_container">
@@ -139,36 +162,32 @@
 
               <div class="slidewrap">
                 <ul class="slidelist">
-                  <li>
+                  <li id="ani1">
                     <a> 
                       <img src="./images/aboutUs_img/about-01.svg" alt="about01">
                       <label for="slide4" class="left"></label>
                       <label for="slide2" class="right"></label>
-                      <input type="button" name="button" id="button1" class="button">
                     </a>
                   </li>
-                  <li>
+                  <li id="ani2">
                     <a>
                       <img src="./images/aboutUs_img/about-02.svg" alt="about02">
                       <label for="slide1" class="left"></label>
                       <label for="slide3" class="right"></label>
-                      <input type="button" name="button" id="button2" class="button">
                     </a>
                   </li>
-                  <li>
+                  <li id="ani3">
                     <a>
                       <img src="./images/aboutUs_img/about-03.svg" alt="about03">
                       <label for="slide2" class="left"></label>
                       <label for="slide4" class="right"></label>
-                      <input type="button" name="button" id="button3" class="button">
                     </a>
                   </li>
                   <li>
-                    <a> 
+                    <a id="ani4"> 
                       <img src="./images/aboutUs_img/about-04.svg" alt="about04">
                       <label for="slide3" class="left"></label>
                       <label for="slide1" class="right"></label>
-                      <input type="button" name="button" id="button4" class="button">
                     </a>
                   </li>
                 </ul>
@@ -176,16 +195,16 @@
 
               <ul class="slick-dots">
                 <li>
-                    <input type="button" name="button" class="button">
+                    <input type="button" name="button" id="button1" class="button">
                 </li>
                 <li>
-                    <input type="button" name="button" class="button">
+                    <input type="button" name="button" id="button2" class="button">
                 </li>
                 <li>
-                    <input type="button" name="button" class="button">
+                    <input type="button" name="button" id="button3" class="button">
                 </li>
                 <li>
-                    <input type="button" name="button" class="button">
+                    <input type="button" name="button" id="button4" class="button"> 
                 </li>
 
               </ul>

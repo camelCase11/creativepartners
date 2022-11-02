@@ -66,10 +66,10 @@ header h1 {
   margin-bottom: 70px;
 }
 .visionWrap, .missionWrap {
-  width: 1200px;
+  width: 100%;
   border-top: 1px solid #dedede;
   padding: 50px 0;
-  margin-top: 15px;
+  margin: 15px;
 }
 .missionWrap {
   margin-bottom: 50px;
@@ -109,9 +109,9 @@ header h1 {
 .aboutUs2 .wwd2 {
   margin-bottom: 40px;
 }
-.grid_{
+/* .grid {
   width: 1200px;
-}
+} */
 .whatwedo {
   width: 282px;
   float: left;
@@ -164,7 +164,7 @@ header h1 {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  transition: all . 5s;
+  transition: all .5s;
 }
 .slide_section .slidelist li a {
   display: block;

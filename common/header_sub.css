@@ -1,0 +1,16 @@
+@charset "utf-8";
+header #head_logo {/*로고*/
+  width:140px; height:36px;
+  position: fixed;
+  top:40px; left:40px;
+}
+header #head_menu {/*버튼*/
+  width:40px; height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50%;
+  background-color: #fff;
+  position: fixed;
+  top:40px; right:40px;
+}
+

@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+body {
+  padding: 0px; margin: 0px;
+  /* width: 100%; */
+  
+  background: url(./images/nav_img/mainNav.png) fixed no-repeat 50% 0 / cover;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header #head_logo {/*로고*/
+  width:146px; height: 36px;
+  position: fixed;
+  top:40px; left:40px;
+  cursor: pointer;
+  
+}
+header #head_menu {/*버튼*/
+  width:40px; height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50%;
+  background-color: #fff;
+  position: fixed;
+  top: 40px; right: 40px;
+  cursor: pointer;
+}
+header .videoWrap {
+  /* width: 100%;
+  height: 100vh; */
+  overflow: hidden;
+  margin: 0px auto;
+  
+}
+header .videoWrap video {
+  position: fixed;
+  top: 0; left: 0;
+  /* min-width: 100%; */
+	min-height: 100%;
+  width: auto;
+	height: auto;
+  object-fit: cover;
+}
+.nav_container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 172px auto;
+}
+.nav_container ul {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 66px; 
+  color: #fff;
+  
+}
+.nav_container #gnb #about::before {
+  content: "ABOUT US";
+}
+.nav_container #gnb #about:hover::before {
+  content: "회사소개";
+}
+.nav_container #gnb #service::before {
+  content: "ONLINE SERVICE";
+}
+.nav_container #gnb #service:hover::before {
+  content: "비대면 서비스";
+}
+.nav_container #gnb #client::before {
+  content: "CLIENT";
+}
+.nav_container #gnb #client:hover::before {
+  content: "함께하는 고객";
+}
+.nav_container #gnb #blog::before {
+  content: "BLOG";
+}
+.nav_container #gnb #blog:hover::before {
+  content: "블로그";
+}
+.nav_container #gnb #contact::before {
+  content: "CONTACT US";
+}
+.nav_container #gnb #contact:hover::before {
+  content: "문의";
+}
+
+.nav_container #gnb li {
+  margin-bottom: 20px;
+  
+}
+.nav_container ul li .sns {
+  display: flex;
+  justify-content: center;
+}
+.nav_container ul li .sns li a {
+  display: block;
+  width: 40px; height: 40px;
+  /* background-color: #ddd; */
+  margin: 10px 10px 20px 0;
+  /* border-radius: 50%; */
+  padding: 8px;
+}
+.nav_container #gnb #sns #facebook::before {
+  content: url(./images/nav_img/facebookIcon.svg);
+}
+.nav_container #gnb #sns #facebook:hover::before {
+  content: url(./images/nav_img/facebookIcon_hover.svg);
+}
+#chat { 
+  position: fixed;
+  bottom: 1.5%; right: 1.5%;
+  width: 60px; height: 60px;
+  background: #fff url(./images/nav_img/charIcon.png) no-repeat center / 80%;
+  border-radius: 42%;
+}

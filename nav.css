@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  overflow: hidden;
+  background: url(./images/nav_img/mainNav.png) fixed no-repeat 50% 0 / cover;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header #head_logo {/*로고*/
+  width:146px; height: 36px;
+  position: fixed;
+  top:40px; left:40px;
+  cursor: pointer;
+  
+}
+header #head_menu {/*버튼*/
+  width:40px; height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50%;
+  background-color: #fff;
+  position: fixed;
+  top: 40px; right: 40px;
+  cursor: pointer;
+}
+.sub_gnb {
+  width: 1200px; height: 168px;
+  line-height: 168px;
+}
+
+.nav_container {
+  width: 100%;
+  margin: 172px auto;
+}
+.nav_container ul {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 66px; 
+  color: #fff;
+  
+}
+.nav_container #gnb li {
+  margin-bottom: 20px;
+  width: ;
+}
+.nav_container ul li .sns {
+  
+  display: flex;
+  justify-content: center;
+}
+.nav_container ul li .sns li a {
+  display: block;
+  width: 40px; height: 40px;
+  background-color: #ddd;
+  margin: 10px 10px 20px 0;
+  border-radius: 50%;
+  padding: 8px;
+}
+.nav_container ul li .sns li img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  position: relative;
+  bottom: 43px;
+}

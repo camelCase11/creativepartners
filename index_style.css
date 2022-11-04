@@ -6,8 +6,8 @@
 
 
 body {
-  /* 오른쪽 여백 삭제용 */
   font-family: 'Noto Sans KR', 'Red Hat Display', 'Poppins', sans-serif;
+    /* 오른쪽 여백 삭제용 */
   min-width: 1569px;
 }
 
@@ -519,37 +519,42 @@ header #gnb li:nth-of-type(5) a{
   box-shadow: 1px 1px 10px #ddd;
  }
 .art5 .wrapper .box2 { 
-  width: 522px; padding: 12px;
+  width: 506px; padding: 12px;
  }
 .art5 .wrapper .box2 .instagramBox { 
   display: flex;
   flex-flow: row wrap;
-  width: 482px; height: 332px;
+  width: 482px; height: 316px;
   justify-content: space-between;
+  align-content: space-between;
  }
 .art5 .wrapper .box2 .instagramBox li a { 
   display: block;
-  width: 150px; height: 150px; border-radius: 7px; overflow: hidden;
- }
- .art5 .wrapper .box2 .instagramBox li:first-child a:hover::before {
-  content: url(./images/mainPage_img/insta-hover1.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(2) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover2.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(3) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover3.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(4) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover4.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(5) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover5.png);
- }
- .art5 .wrapper .box2 .instagramBox li:last-child a:hover::before {
-  content: url(./images/mainPage_img/insta-hover6.png);
+  width: 150px; height: 150px;
+  border-radius: 7px;
  }
 
+ .art5 .wrapper .box2 .instagramBox li:first-child a {
+  background-image: url(./images/mainPage_img/article5_insta1.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(2) a {
+  background-image: url(./images/mainPage_img/article5_insta2.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(3) a {
+  background-image: url(./images/mainPage_img/article5_insta3.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(4) a {
+  background-image: url(./images/mainPage_img/article5_insta4.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(5) a {
+  background-image: url(./images/mainPage_img/article5_insta5.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:last-child a {
+  background-image: url(./images/mainPage_img/article5_insta6.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li a:hover {
+  content: url(./images/mainPage_img/insta-hover.png);
+ }
 
  /* footer */
 

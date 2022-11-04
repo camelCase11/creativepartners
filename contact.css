@@ -155,8 +155,8 @@ header {
 
 
   /* footer */
-body {
-    font-family: "Noto Sans KR", "Poppins", "Red Hat Display:wght@700" ,sans-serif;
+  body {
+    font-family: "Noto Sans KR", "Poppins", "Red Hat Display" ,sans-serif;
   }
   .clearfix::after {
     content: "";
@@ -191,6 +191,7 @@ body {
     width: 500px;
     font-size: 52px;
     font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
     background: url(./images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
   }
   .footlogo:hover {

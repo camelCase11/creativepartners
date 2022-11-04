@@ -54,7 +54,7 @@ header {
 
 
 
-/* main */
+/* main.service */
 .container {
     width: 100%;
     background-color: #fff;
@@ -65,7 +65,7 @@ header {
 main {
     margin: 0px auto 160px;
     max-width: 1224px;
-    /* background-color: aqua;변경예정 */
+    font-family: "Noto Sans KR",sans-serif;
 }
 .med1 {
     padding: 12px;
@@ -89,7 +89,6 @@ main img {
     width: 384px; height: 180px;
 }
 main .box {
-    /* border: 1px solid trㄴansparent; */
     border-radius: 10px;
     width: 384px;
     box-shadow: 0px 0px 10px 5px rgba(125,125,125,0.1);
@@ -115,9 +114,6 @@ main .main_img_txt3 {
     top: 0; left: 812px;
 }
 main .txt1 {
-    /* border: 1px solid #000; */
-    /* border-radius: 0 0 10px 10px; */
-    /* border-top: none; */
     padding: 20px 28px 26px;
     line-height: 1.6;
 }

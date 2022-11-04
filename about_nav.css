@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body {
+
+  padding: 0px; margin: 0px;
+  /* width: 100%; */
+
+  background: url(./images/nav_img/aboutNav.PNG) fixed no-repeat 50% 0 / cover;
+  
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header #head_logo {/*로고*/
+  width:146px; height: 36px;
+  position: fixed;
+  top:40px; left:40px;
+  cursor: pointer;
+  
+}
+header #head_menu {/*버튼*/
+  width:40px; height:40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50%;
+  background-color: #fff;
+  position: fixed;
+  top: 40px; right: 40px;
+  cursor: pointer;
+}
+
+header #head_menu:hover {
+  background-color: #003DAB;
+  content: url(./images/nav_img/exitIcon_hover.svg);
+}
+
+.nav_container {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  margin: 172px auto;
+}
+.nav_container ul {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 66px; 
+  color: #fff;
+  
+}
+
+.nav_container #gnb #about::before {
+  content: "ABOUT US";
+}
+.nav_container #gnb #service::before {
+  content: "ONLINE SERVICE";
+}
+.nav_container #gnb #client::before {
+  content: "CLIENT";
+}
+.nav_container #gnb #blog::before {
+  content: "BLOG";
+}
+.nav_container #gnb #contact::before {
+  content: "CONTACT US";
+}
+
+.nav_container #gnb #about:hover::before {
+  content: "회사소개";
+}
+.nav_container #gnb #service:hover::before {
+  content: "비대면 서비스";
+}
+.nav_container #gnb #client:hover::before {
+  content: "함께하는 고객";
+}
+.nav_container #gnb #blog:hover::before {
+  content: "블로그";
+}
+.nav_container #gnb #contact:hover::before {
+  content: "문의";
+}
+
+.nav_container #gnb a:hover {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+}
+.nav_container #gnb li {
+  margin-bottom: 20px;
+  
+}
+.sns {
+
+  display: flex;
+  justify-content: center;
+  
+}
+.sns li a {
+  display: block;
+  width: 40px; height: 40px;
+  background-color: #ddd;
+  margin: 10px 10px 0;
+  border-radius: 50%;
+  padding: 8px;
+}
+#facebook {
+  background: #ddd url(./images/nav_img/icon\ _Facebook\ F_.png) no-repeat center / 30%;
+
+}
+#facebook:hover {
+  background: #003DAB url(./images/nav_img/icon\ _Facebook\ F_w.png) no-repeat center / 30%;
+}
+#insta {
+  background: #ddd url(./images/nav_img/icon\ _Instagram_.png) no-repeat center / 60%;
+
+}
+#insta:hover {
+  background: #003DAB url(./images/nav_img/icon\ _Instagram_w.png) no-repeat center / 60%;
+}
+#youtube {
+  background: #ddd url(./images/nav_img/icon\ _YouTube_.png) no-repeat center / 60%;
+
+}
+#youtube:hover {
+  background: #003DAB url(./images/nav_img/icon\ _YouTube_w.png) no-repeat center / 60%;
+}
+#brunch {
+  background: #ddd url(./images/nav_img/Brunch_Logo.svg) no-repeat center / 60%;
+
+}
+#brunch:hover {
+  background: #003DAB url(./images/nav_img/Brunch_Logo_w.png) no-repeat center / 60%;
+}
+
+
+#chat { 
+  position: fixed;
+  bottom: 1.5%; right: 1.5%;
+  width: 60px; height: 60px;
+  background: #fff url(./images/nav_img/charIcon.png) no-repeat center / 80%;
+  border-radius: 42%;
+  background-color: #ddd;
+  margin: 10px 10px 20px 0; 
+  padding: 8px;
+}

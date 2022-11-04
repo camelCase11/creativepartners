@@ -599,10 +599,10 @@ footer .wrapper .marginbox {
   border-radius: 7px;
   margin: 25px 20px 0 0;
   font-size: 14px;
-  background: url(./images/footer_img/🦆\ icon\ _Alternate\ External\ Link_.png) no-repeat 90% 50% / 14px;
+  background: url(./images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
 }
 .footNav li:nth-child(3) a {
-  background: url(./images/footer_img/🦆\ icon\ _Caret\ Down_.png) no-repeat 90% 50% / 7px;
+  background: url(./images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
 }
 .marginbox {
   width: 100px; height: 50px;
@@ -669,7 +669,7 @@ footer .wrapper .marginbox {
   display: block;
   font-family: 'Poppins', sans-serif; font-size: 14px;
   width: 40px;
-  background: url(./images/footer_img/🦆\ icon\ _chevron-up_.png) no-repeat 90% 50% / 6px;
+  background: url(./images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
   float: right;
 }
 

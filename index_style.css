@@ -499,7 +499,8 @@ header #gnb li:nth-of-type(5) a{
 .art5 .wrapper .box1 .follow {
   width: 660px;
   background-color: #F0F3FA; border-radius: 7px;
-  display: flex; padding: 18px 24px;
+  display: flex;
+  padding: 5px 24px;
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;

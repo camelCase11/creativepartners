@@ -6,8 +6,8 @@
 
 
 body {
-  /* 오른쪽 여백 삭제용 */
   font-family: 'Noto Sans KR', 'Red Hat Display', 'Poppins', sans-serif;
+    /* 오른쪽 여백 삭제용 */
   min-width: 1569px;
 }
 
@@ -424,7 +424,7 @@ header #gnb li:nth-of-type(5) a{
 .art4 .wrapper .container .box .txtBox a:first-child {
   color: #003DAB;
   text-transform: uppercase;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-weight: 500;
   font-size: 14px;
   margin: 24px 0 3px;
@@ -499,7 +499,8 @@ header #gnb li:nth-of-type(5) a{
 .art5 .wrapper .box1 .follow {
   width: 660px;
   background-color: #F0F3FA; border-radius: 7px;
-  display: flex; padding: 18px 24px;
+  display: flex;
+  padding: 5px 24px;
   flex-flow: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -518,37 +519,42 @@ header #gnb li:nth-of-type(5) a{
   box-shadow: 1px 1px 10px #ddd;
  }
 .art5 .wrapper .box2 { 
-  width: 522px; padding: 12px;
+  width: 506px; padding: 12px;
  }
 .art5 .wrapper .box2 .instagramBox { 
   display: flex;
   flex-flow: row wrap;
-  width: 482px; height: 332px;
+  width: 482px; height: 316px;
   justify-content: space-between;
+  align-content: space-between;
  }
 .art5 .wrapper .box2 .instagramBox li a { 
   display: block;
-  width: 150px; height: 150px; border-radius: 7px; overflow: hidden;
- }
- .art5 .wrapper .box2 .instagramBox li:first-child a:hover::before {
-  content: url(./images/mainPage_img/insta-hover1.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(2) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover2.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(3) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover3.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(4) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover4.png);
- }
- .art5 .wrapper .box2 .instagramBox li:nth-child(5) a:hover::before {
-  content: url(./images/mainPage_img/insta-hover5.png);
- }
- .art5 .wrapper .box2 .instagramBox li:last-child a:hover::before {
-  content: url(./images/mainPage_img/insta-hover6.png);
+  width: 150px; height: 150px;
+  border-radius: 7px;
  }
 
+ .art5 .wrapper .box2 .instagramBox li:first-child a {
+  background-image: url(./images/mainPage_img/article5_insta1.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(2) a {
+  background-image: url(./images/mainPage_img/article5_insta2.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(3) a {
+  background-image: url(./images/mainPage_img/article5_insta3.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(4) a {
+  background-image: url(./images/mainPage_img/article5_insta4.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:nth-child(5) a {
+  background-image: url(./images/mainPage_img/article5_insta5.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li:last-child a {
+  background-image: url(./images/mainPage_img/article5_insta6.webp);
+ }
+ .art5 .wrapper .box2 .instagramBox li a:hover {
+  content: url(./images/mainPage_img/insta-hover.png);
+ }
 
  /* footer */
 
@@ -598,10 +604,10 @@ footer .wrapper .marginbox {
   border-radius: 7px;
   margin: 25px 20px 0 0;
   font-size: 14px;
-  background: url(./images/footer_img/🦆\ icon\ _Alternate\ External\ Link_.png) no-repeat 90% 50% / 14px;
+  background: url(./images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
 }
 .footNav li:nth-child(3) a {
-  background: url(./images/footer_img/🦆\ icon\ _Caret\ Down_.png) no-repeat 90% 50% / 7px;
+  background: url(./images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
 }
 .marginbox {
   width: 100px; height: 50px;
@@ -668,7 +674,7 @@ footer .wrapper .marginbox {
   display: block;
   font-family: 'Poppins', sans-serif; font-size: 14px;
   width: 40px;
-  background: url(./images/footer_img/🦆\ icon\ _chevron-up_.png) no-repeat 90% 50% / 6px;
+  background: url(./images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
   float: right;
 }
 

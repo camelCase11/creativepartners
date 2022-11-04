@@ -44,7 +44,7 @@ h1 {
   line-height: 168px;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -54,4 +54,4 @@ h1 {
   background-color: #fff;
   position: relative;
   z-index: 99;
-}
+} */

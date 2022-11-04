@@ -424,7 +424,7 @@ header #gnb li:nth-of-type(5) a{
 .art4 .wrapper .container .box .txtBox a:first-child {
   color: #003DAB;
   text-transform: uppercase;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-weight: 500;
   font-size: 14px;
   margin: 24px 0 3px;

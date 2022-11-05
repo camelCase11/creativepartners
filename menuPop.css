@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+/* 팝업 css */
+.pub #menuPop {
+    display: none;
+}
+.pub .menuPop {
+    display: block;
+    width: 42px; height: 42px; border-radius: 50%;
+    background: #fff no-repeat url(./images/header_img/front_menuicon.png) center ;
+    position: fixed;
+    top: 40px; right: 40px;
+    z-index: 9998;
+}
+.pub .menuPop:hover {
+    cursor: pointer;
+    background-color: #003DAB;
+    content: url(./images/header_img/front_menuicon_hover.png);
+}
+.pub #menuPop:checked + label + .bgBox {
+    background-color: #000000e3;
+    width: 100%; height: 100vh;
+    position: fixed; top: 0; left: 0;
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pub #menuPop:checked + label + .bgBox > .menuPopDown { display: block; }
+
+.pub .menuPopDown{
+    width:42px; height:42px;
+    border-radius:50%;
+    background: #fff;
+    content: url(./images/nav_img/exitIcon.svg);
+    cursor: pointer;
+    display: none;
+
+    position: fixed;
+    top: 40px; right: 40px;
+    z-index: 9999;
+}
+.pub .menuPopDown:hover{
+    background-color: #003DAB;
+    content: url(./images/nav_img/exitIcon_hover.svg);
+}
+
+header #pop_logo {/*팝업 로고*/
+    width:146px; height: 36px;
+
+    position: fixed;
+    top:40px; left:40px;
+    z-index: 9999;
+
+    cursor: pointer;
+    display: none;
+  }
+  .pub #menuPop:checked + label + .bgBox > #pop_logo { display: block; }
+
+/* pop up nav */
+
+.pub .bgBox .nav_container {
+    position: absolute;
+  }
+  .pub .bgBox .nav_container .gnb {
+    width: 562px; height: 590px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .nav_container .gnb a:hover {
+    font-weight: 800;
+    font-size: 56px;
+  }
+  .nav_container .gnb .about::before {
+    content: "ABOUT US";
+  }
+  .nav_container .gnb .service::before {
+    content: "ONLINE SERVICE";
+  }
+  .nav_container .gnb .client::before {
+    content: "CLIENT";
+  }
+  .nav_container .gnb .blog::before {
+    content: "BLOG";
+  }
+  .nav_container .gnb .contact::before {
+    content: "CONTACT US";
+  }
+  
+  .nav_container .gnb .about:hover::before {
+    content: "회사소개";
+  }
+  .nav_container .gnb .service:hover::before {
+    content: "비대면 서비스";
+  }
+  .nav_container .gnb .client:hover::before {
+    content: "함께하는 고객";
+  }
+  .nav_container .gnb .blog:hover::before {
+    content: "블로그";
+  }
+  .nav_container .gnb .contact:hover::before {
+    content: "문의";
+  }
+  .nav_container .gnb .sns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 220px;
+  }
+  .nav_container .gnb .sns li a {
+    display: block;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  #facebook {
+    background: #fff url(./images/nav_img/icon\ _Facebook\ F_.png) no-repeat center / 40%;
+  }
+  #facebook:hover {
+    background: #003DAB url(./images/nav_img/icon\ _Facebook\ F_w.png) no-repeat center / 40%;
+  }
+  #insta {
+    background: #fff url(./images/nav_img/icon\ _Instagram_.png) no-repeat center / 70%;
+  
+  }
+  #insta:hover {
+    background: #003DAB url(./images/nav_img/icon\ _Instagram_w.png) no-repeat center / 70%;
+  }
+  #youtube {
+    background: #fff url(./images/nav_img/icon\ _YouTube_.png) no-repeat center / 75%;
+  
+  }
+  #youtube:hover {
+    background: #003DAB url(./images/nav_img/icon\ _YouTube_w.png) no-repeat center / 75%;
+  }
+  #brunch {
+    background: #fff url(./images/nav_img/Brunch_Logo.svg) no-repeat center / 75%;
+  
+  }
+  #brunch:hover {
+    background: #003DAB url(./images/nav_img/Brunch_Logo_w.png) no-repeat center / 75%;
+  }
+  /* 팝업 css */

@@ -146,33 +146,32 @@ header .gnb {
   display: block;
   width: 40px; height: 40px;
   border-radius: 50%;
-  padding: 8px;
   margin-top: 10px;
 }
 /* 팝업 sns 이미지&호버 */
 #facebook {
-  background: #fff url(./images/nav_img/icon\ _Facebook\ F_.png) no-repeat center / 40%;
+  background: url(./images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
 }
 #facebook:hover {
-  background: #003DAB url(./images/nav_img/icon\ _Facebook\ F_w.png) no-repeat center / 40%;
+  background: url(./images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
 }
 #insta {
-  background: #fff url(./images/nav_img/icon\ _Instagram_.png) no-repeat center / 70%;
+  background: url(./images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
 }
 #insta:hover {
-  background: #003DAB url(./images/nav_img/icon\ _Instagram_w.png) no-repeat center / 70%;
+  background: url(./images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
 }
 #youtube {
-  background: #fff url(./images/nav_img/icon\ _YouTube_.png) no-repeat center / 75%;
+  background: url(./images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
 }
 #youtube:hover {
-  background: #003DAB url(./images/nav_img/icon\ _YouTube_w.png) no-repeat center / 75%;
+  background: url(./images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat center;
 }
 #brunch {
-  background: #fff url(./images/nav_img/Brunch_Logo.svg) no-repeat center / 75%;
+  background: url(./images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
 }
 #brunch:hover {
-  background: #003DAB url(./images/nav_img/Brunch_Logo_w.png) no-repeat center / 75%;
+  background: url(./images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
 
 

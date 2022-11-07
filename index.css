@@ -353,8 +353,9 @@ header .wrapper .gnb li:nth-of-type(5) a{
   overflow: auto;
 }
 .art2 .wrapper .scrollBox::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
 }
+
 .art2 .wrapper .scrollBox::-webkit-scrollbar-track {
   background: #cbddff;
 }

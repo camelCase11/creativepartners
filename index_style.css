@@ -153,25 +153,25 @@ header .gnb {
   background: url(./images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
 }
 #facebook:hover {
-  background: url(./images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(./images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
 }
 #insta {
   background: url(./images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
 }
 #insta:hover {
-  background: url(./images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(./images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
 }
 #youtube {
   background: url(./images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
 }
 #youtube:hover {
-  background: url(./images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(./images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat center;
 }
 #brunch {
   background: url(./images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
 }
 #brunch:hover {
-  background: url(./images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(./images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
 
 

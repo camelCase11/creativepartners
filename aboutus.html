@@ -24,14 +24,74 @@
   </head>
   <body>
     <header>
-        <a href="./index.html" id="head_logo">
-          <img src="./images/header_img/logo.svg" alt="로고">
-        </a>
-        <a href="./about_nav.html" id="head_menu">
-          <img src="./images/header_img/front_menuicon.png" alt="메뉴">
-        </a>
+
+    <!-- 고정 로고 -->
+      <a href="./index.html" id="head_logo">
+        <img src="./images/header_img/logo.svg" alt="로고">
+      </a>
+
+
+
+    <!-- 메뉴 -->
+      <div class="popUp">
+        <!-- 팝업 on/off 체크박스 -->
+        <input type="checkbox" id="menuPop">
+        <!-- 메뉴 팝업 버튼 -->
+        <label for="menuPop" class="menuUp"></label>
+
+        <!-- 팝업 콘텐츠 -->
+        <div class="bgBox">
+          <div class="nav_container">
+            <ul id="gnb">
+              <li>
+                <a href="./aboutus.html" id="about"></a>
+              </li>
+              <li>
+                <a href="./service.html" id="service"></a>
+              </li>
+              <li>
+                <a href="./client.html" id="client"></a>
+              </li>
+              <li>
+                <a href="https://blog.creativepartners.co.kr/" target="_blank" id="blog"></a>
+              </li>
+              <li>
+                <a href="./contact.html" id="contact"></a></li>
+              <li>
+                <ul class="sns">
+                  <li>
+                    <a href="https://www.facebook.com/for2creative" target="_blank" id="facebook">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/creative_partners/" target="_blank" id="insta">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCldtxzrfuCnu8_CisxeYjrQ" target="_blank" id="youtube">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://brunch.co.kr/@cppartners" target="_blank" id="brunch"> </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 팝업창 로고 -->
+          <a href="./index.html" id="pop_logo">
+            <img src="./images/nav_img/logo.png" alt="로고">
+          </a>
+          <!-- 팝업창 나가기 -->
+          <label for="menuPop" class="menuPopdown"></label>
+        </div>
+      </div>
+
+
+
         <!-- 우측 하단 상담 -->
-        <a href="#" id="charIcon"></a>
+        <a href="https://creativepartners.channel.io/lounge" target="_blank" id="charIcon"></a>
 
         <div class="sub_title">
           <div class="subTitleWrap">
@@ -221,7 +281,7 @@
             </div>
           </div>
         </div>  
-        <a href="#" id="chat"></a>
+        <a href="https://creativepartners.channel.io/lounge" target="_blank"  id="chat"></a>
       </main>
 
       <footer class="clearfix">

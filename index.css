@@ -45,9 +45,10 @@ header #charIcon { /* 버튼2 */
   position: fixed;
   bottom: 1.5%; right: 1.5%;
   width: 60px; height: 60px;
-  background: #ddd url(./images/mainPage_img/charIcon.png) no-repeat center / 80%;
+  background: #fff url(./images/mainPage_img/charIcon.png) no-repeat center / 80%;
   border-radius: 42%;
   display: block;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
   z-index: 9999;
 }
 
@@ -62,9 +63,11 @@ header #charIcon { /* 버튼2 */
   display: block;
   width: 42px; height: 42px; border-radius: 50%;
   background: #fff no-repeat url(./images/header_img/front_menuicon.png) center ;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
   position: fixed;
   top: 40px; right: 40px;
   z-index: 9998;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
 }
 /* 메뉴 btn 호버 */
 .pub .menuPop:hover {
@@ -102,7 +105,7 @@ header #charIcon { /* 버튼2 */
   background-color: #003DAB;
   content: url(./images/nav_img/exitIcon_hover.svg);
 }
-/*팝업 로고*/
+/*팝업 로고 hide */
 header #pop_logo {
   width:146px; height: 36px;
 
@@ -113,7 +116,7 @@ header #pop_logo {
   cursor: pointer;
   display: none;
 }
-/* 팝업 로고 hide */
+/* 팝업 로고 pop */
 .pub #menuPop:checked + label + .bgBox > #pop_logo { display: block; }
 
 /* 팝업 gnb 컨테이너 */
@@ -123,15 +126,18 @@ header #pop_logo {
 /* gnb 공용 */
 header .gnb {
   font-family: 'Red Hat Display', 'Noto Sans KR', sans-serif;
-  font-size: 72px; font-weight: 900;
+  font-size: 66px; font-weight: 900;
 }
 /* 팝업 gnb 정렬 */
 .pub .bgBox .nav_container .gnb {
-  width: 650px; height: 640px;
+  width: 650px; height: 580px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
+}
+.pub .bgBox .nav_container .gnb > li > a {
+  height: 87px;
 }
 /* 팝업 sns 정렬 */
 .nav_container .gnb .sns {
@@ -142,10 +148,10 @@ header .gnb {
 }
 /* 팝업 sns 디자인 */
 .nav_container .gnb .sns li a {
-  display: block;
   width: 40px; height: 40px;
   border-radius: 50%;
   margin-top: 10px;
+  display: none;
 }
 /* 팝업 sns 이미지&호버 */
 #facebook {
@@ -172,6 +178,10 @@ header .gnb {
 #brunch:hover {
   background: #003DAB url(./images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
+/* 메인 팝업 sns 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container li a {
+  display: block;
+}
 
 
 /* 메인 gnb */
@@ -189,11 +199,11 @@ header .wrapper .txt_front {
   color: #fff;
   position: absolute;
   top: 0; left: 0;
-  margin: 120px 0 0 400px;
+  margin: 160px 0 0 360px;
 }
 header p {
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.3;
   margin-bottom: 40px;
@@ -201,11 +211,11 @@ header p {
 header .txt_front .gnb a {
   display: block;
   height: 87px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .gnb a:hover {
   font-weight: 800;
-  font-size: 63px;
+  font-size: 60px;
 }
 
 .gnb .about::before {

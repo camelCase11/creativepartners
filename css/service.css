@@ -13,31 +13,186 @@ header {
     cursor: pointer;
     z-index: 9999;
   }
-  header #head_menu {/*버튼*/
-    width:40px; height:40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius:50%;
-    background-color: #fff;
-    position: fixed;
-    top: 40px; right: 40px;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
-    z-index: 9999;
-  }
-  header #head_menu:hover {
-    background-color: #003DAB;
-    content: url(./images/header_img/front_menuicon_hover.png);
-  }
   header #charIcon { /* 버튼2 */
     position: fixed;
     bottom: 1.5%; right: 1.5%;
     width: 60px; height: 60px;
-    background: #ddd url(./images/mainPage_img/charIcon.png) no-repeat center / 80%;
+    background: #ddd url(../images/mainPage_img/charIcon.png) no-repeat center / 80%;
     border-radius: 42%;
     display: block;
     z-index: 9997;
   }
+  /* 팝업 css */
+
+/* 팝업 on /off 체크박스 */
+.pub #menuPop {
+  display: none;
+}
+/* 우측 상단 메뉴 btn */
+.pub .menuPop {
+  display: block;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: #fff no-repeat url(../images/header_img/front_menuicon.png) center ;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
+  position: fixed;
+  top: 40px; right: 40px;
+  z-index: 9998;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
+}
+/* 메뉴 btn 호버 */
+.pub .menuPop:hover {
+  cursor: pointer;
+  background: #003DAB url(../images/header_img/front_menuicon_hover.png) no-repeat center;
+}
+/* 팝업 반투명 bg */
+.pub #menuPop:checked + label + .bgBox {
+  background-color: #000000ef;
+  width: 100%; height: 100vh;
+  position: fixed; top: 0; left: 0;
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 팝업 close btn */
+.pub #menuPop:checked + label + .bgBox > .menuPopDown { display: block; }
+
+/* 팝업 close btn */
+.pub .menuPopDown{
+  width:42px; height:42px;
+  border-radius:50%;
+  background: #fff;
+  content: url(../images/nav_img/exitIcon.svg);
+  cursor: pointer;
+  display: none;
+
+  position: fixed;
+  top: 40px; right: 40px;
+  z-index: 9999;
+}
+/* 팝업 close btn hover */
+.pub .menuPopDown:hover{
+  background-color: #003DAB;
+  content: url(../images/nav_img/exitIcon_hover.svg);
+}
+/*팝업 로고 hide */
+header #pop_logo {
+  width:146px; height: 36px;
+
+  position: fixed;
+  top:40px; left:40px;
+  z-index: 9999;
+
+  cursor: pointer;
+  display: none;
+}
+/* 팝업 로고 pop */
+.pub #menuPop:checked + label + .bgBox > #pop_logo { display: block; }
+
+/* 팝업 gnb 컨테이너 */
+.pub .bgBox .nav_container {
+  position: absolute;
+  display: none;
+}
+/* 팝업 메뉴 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container {
+  display: block;
+}
+/* gnb 공용 */
+header .gnb {
+  font-family: 'Red Hat Display', 'Noto Sans KR', sans-serif;
+  font-size: 66px; font-weight: 900;
+}
+/* 팝업 gnb 정렬 */
+.pub .bgBox .nav_container .gnb {
+  width: 650px; height: 580px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.pub .bgBox .nav_container .gnb > li > a {
+  height: 87px;
+}
+.gnb a:hover {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.gnb .about::before {
+  content: "ABOUT US";
+}
+.gnb .about:hover::before {
+  content: "회사소개";
+}
+.gnb .service::before {
+  content: "ONLINE SERVICE";
+}
+.gnb .service:hover::before {
+  content: "비대면 서비스";
+}
+.gnb .client::before {
+  content: "CLIENT";
+}
+.gnb .client:hover::before {
+  content: "함께하는 고객";
+}
+ .gnb .blog::before {
+  content: "BLOG";
+}
+.gnb .blog:hover::before {
+  content: "블로그";
+}
+.gnb .contact::before {
+  content: "CONTACT US";
+}
+.gnb .contact:hover::before {
+  content: "문의";
+}
+/* 팝업 sns 정렬 */
+.nav_container .gnb .sns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+}
+/* 팝업 sns 디자인 */
+.nav_container .gnb .sns li a {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: none;
+}
+/* 팝업 sns 이미지&호버 */
+#facebook {
+  background: url(../images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
+}
+#facebook:hover {
+  background: #003DAB url(../images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
+}
+#insta {
+  background: url(../images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
+}
+#insta:hover {
+  background: #003DAB url(../images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
+}
+#youtube {
+  background: url(../images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
+}
+#youtube:hover {
+  background: #003DAB url(../images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat 55% 55%;
+}
+#brunch {
+  background: url(../images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
+}
+#brunch:hover {
+  background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
+}
+/* 메인 팝업 sns 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container li a {
+  display: block;
+}
+  /* 팝업 css */ 
   .sub_title {
     width: 100%; height: 259px;
     margin: 0 auto;
@@ -194,11 +349,11 @@ body {
     font-size: 52px;
     font-family: "Red Hat Display", sans-serif;
     font-weight: 700;
-    background: url(./images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
+    background: url(../images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
   }
   .footlogo:hover {
     color: #003DAB;
-    background: url(./images/footer_img/footer_arrowBlue.png) no-repeat 290px center / 40px;
+    background: url(../images/footer_img/footer_arrowBlue.png) no-repeat 290px center / 40px;
   }
   .footbox1 p {
     color: #7a7a7a;
@@ -215,10 +370,10 @@ body {
     border-radius: 7px;
     margin: 25px 20px 0 0;
     font-size: 14px;
-    background: url(./images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
+    background: url(../images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
   }
   .footNav li:nth-child(3) a {
-    background: url(./images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
+    background: url(../images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
   }
   .marginbox {
     width: 100px; height: 50px;
@@ -285,6 +440,6 @@ body {
     display: block;
     font-family: 'Poppins', sans-serif; font-size: 14px;
     width: 40px;
-    background: url(./images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
+    background: url(../images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
     float: right;
   }

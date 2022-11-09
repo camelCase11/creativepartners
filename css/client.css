@@ -25,7 +25,7 @@ header #charIcon { /* 버튼2 */
   position: fixed;
   bottom: 1.5%; right: 1.5%;
   width: 60px; height: 60px;
-  background: #fff url(./images/mainPage_img/charIcon.png) no-repeat center / 80%;
+  background: #fff url(../images/mainPage_img/charIcon.png) no-repeat center / 80%;
   border-radius: 42%;
   display: block;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
@@ -61,7 +61,7 @@ header .sub_title {
 .pub .menuPop {
   display: block;
   width: 42px; height: 42px; border-radius: 50%;
-  background: #fff no-repeat url(./images/header_img/front_menuicon.png) center ;
+  background: #fff no-repeat url(../images/header_img/front_menuicon.png) center ;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
   position: fixed;
   top: 40px; right: 40px;
@@ -71,7 +71,7 @@ header .sub_title {
 /* 메뉴 btn 호버 */
 .pub .menuPop:hover {
   cursor: pointer;
-  background: #003DAB url(./images/header_img/front_menuicon_hover.png) no-repeat center;
+  background: #003DAB url(../images/header_img/front_menuicon_hover.png) no-repeat center;
 }
 /* 팝업 반투명 bg */
 .pub #menuPop:checked + label + .bgBox {
@@ -91,7 +91,7 @@ header .sub_title {
   width:42px; height:42px;
   border-radius:50%;
   background: #fff;
-  content: url(./images/nav_img/exitIcon.svg);
+  content: url(../images/nav_img/exitIcon.svg);
   cursor: pointer;
   display: none;
 
@@ -102,7 +102,7 @@ header .sub_title {
 /* 팝업 close btn hover */
 .pub .menuPopDown:hover{
   background-color: #003DAB;
-  content: url(./images/nav_img/exitIcon_hover.svg);
+  content: url(../images/nav_img/exitIcon_hover.svg);
 }
 /*팝업 로고 hide */
 header #pop_logo {
@@ -194,28 +194,28 @@ header .gnb {
 }
 /* 팝업 sns 이미지&호버 */
 #facebook {
-  background: url(./images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
+  background: url(../images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
 }
 #facebook:hover {
-  background: #003DAB url(./images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(../images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
 }
 #insta {
-  background: url(./images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
+  background: url(../images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
 }
 #insta:hover {
-  background: #003DAB url(./images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(../images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
 }
 #youtube {
-  background: url(./images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
+  background: url(../images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
 }
 #youtube:hover {
-  background: #003DAB url(./images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat 55% 55%;
+  background: #003DAB url(../images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat 55% 55%;
 }
 #brunch {
-  background: url(./images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
+  background: url(../images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
 }
 #brunch:hover {
-  background: #003DAB url(./images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
+  background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
 /* 메인 팝업 sns 숨김 */
 .pub #menuPop:checked + .menuPop + .bgBox > .nav_container li a {
@@ -385,11 +385,11 @@ footer .wrapper .marginbox {
   font-size: 52px;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
-  background: url(./images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
+  background: url(../images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
 }
 .footlogo:hover {
   color: #003DAB;
-  background: url(./images/footer_img/footer_arrowBlue.png) no-repeat 290px center / 40px;
+  background: url(../images/footer_img/footer_arrowBlue.png) no-repeat 290px center / 40px;
 }
 .footbox1 p {
   color: #7a7a7a;
@@ -406,10 +406,10 @@ footer .wrapper .marginbox {
   border-radius: 7px;
   margin: 25px 20px 0 0;
   font-size: 14px;
-  background: url(./images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
+  background: url(../images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
 }
 .footNav li:nth-child(3) a {
-  background: url(./images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
+  background: url(../images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
 }
 
 .footbox2 {
@@ -472,6 +472,6 @@ footer .wrapper .marginbox {
   display: block;
   font-family: 'Poppins', sans-serif; font-size: 14px;
   width: 40px;
-  background: url(./images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
+  background: url(../images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
   float: right;
 }

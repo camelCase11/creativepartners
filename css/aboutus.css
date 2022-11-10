@@ -57,50 +57,46 @@ h1 {
 
 /* 메뉴 팝업창 */
 
-/* 팝업 on/off 체크박스 */
-.popUp #menuPop {
+/* 팝업 css */
+
+/* 팝업 on /off 체크박스 */
+.pub #menuPop {
   display: none;
 }
-/* 메뉴 팝업 버튼 */
-.popUp .menuUp {
+/* 우측 상단 메뉴 btn */
+.pub .menuPop {
   display: block;
-  width: 42px; height: 42px;
-  border-radius: 50%;
-  background: #fff url(../images/header_img/front_menuicon.png) no-repeat center;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: #fff no-repeat url(../images/header_img/front_menuicon.png) center ;
   box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
-
   position: fixed;
   top: 40px; right: 40px;
   z-index: 9998;
+  box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
 }
-/* 메뉴 팝업 버튼 호버 */
-.popUp .menuUp:hover {
-  background: #003DAB url(../images/header_img/front_menuicon_hover.png) no-repeat center;
+/* 메뉴 btn 호버 */
+.pub .menuPop:hover {
   cursor: pointer;
+  background: #003DAB url(../images/header_img/front_menuicon_hover.png) no-repeat center;
 }
-
-
-/* 배경 */
-.popUp #menuPop:checked + label + .bgBox {
-  background-color: rgb(0, 0, 0, .9);
+/* 팝업 반투명 bg */
+.pub #menuPop:checked + label + .bgBox {
+  background-color: #000000ef;
   width: 100%; height: 100vh;
-  position: fixed;
-  top: 0; left: 0;
+  position: fixed; top: 0; left: 0;
   z-index: 9998;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
+/* 팝업 close btn */
+.pub #menuPop:checked + label + .bgBox > .menuPopDown { display: block; }
 
-/* 나가기 버튼 */
-.popUp #menuPop:checked + label + .bgBox > .menuPopdown {
-  display: block;
-} 
-.popUp .menuPopdown {
-  width: 42px; height: 42px;
-  border-radius: 50%;
+/* 팝업 close btn */
+.pub .menuPopDown{
+  width:42px; height:42px;
+  border-radius:50%;
+  background: #fff;
   content: url(../images/nav_img/exitIcon.svg);
   cursor: pointer;
   display: none;
@@ -109,110 +105,108 @@ h1 {
   top: 40px; right: 40px;
   z-index: 9999;
 }
-/* 나가기 버튼 호버 */
-.popUp .menuPopdown:hover {
+/* 팝업 close btn hover */
+.pub .menuPopDown:hover{
   background-color: #003DAB;
   content: url(../images/nav_img/exitIcon_hover.svg);
 }
-
-/* 팝업 로고 */
-#pop_logo {
-  width: 146px; height: 36px;
+/*팝업 로고 hide */
+header #pop_logo {
+  width:146px; height: 36px;
 
   position: fixed;
-  top: 40px; left: 40px;
+  top:40px; left:40px;
   z-index: 9999;
 
   cursor: pointer;
   display: none;
 }
-.popUp #menuPop:checked + label + .bgBox > #pop_logo {
+/* 팝업 로고 pop */
+.pub #menuPop:checked + label + .bgBox > #pop_logo { display: block; }
+
+/* 팝업 gnb 컨테이너 */
+.pub .bgBox .nav_container {
+  position: absolute;
+  display: none;
+}
+/* 팝업 메뉴 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container {
   display: block;
 }
-
-/* 팝업 gnb */
-.popUp .bgBox .nav_container {
-  position: absolute;
-}
-
-.popUp .bgBox .nav_container #gnb {
+/* gnb 공용 */
+header .gnb {
   font-family: 'Red Hat Display', 'Noto Sans KR', sans-serif;
-  font-size: 66px;
-  font-weight: 900;
-  width: 650px; height: 640px;
+  font-size: 66px; font-weight: 900;
+}
+/* 팝업 gnb 정렬 */
+.pub .bgBox .nav_container .gnb {
+  width: 650px; height: 580px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
 }
-
-.nav_container #gnb li a {
+.pub .bgBox .nav_container .gnb li {
+  display: flex;
+  justify-content: space-around;
+}
+.pub .bgBox .nav_container .gnb li .menu {
+  width: 100%;
+  text-align: center;
+}
+.pub .bgBox .nav_container .gnb li .menu a + a {
+  width: 561px;
+  top: 0; left: 50%;
+  transform: translate(-50%);
+} 
+.menu {
+  position: relative;
+  height: 87px;
+  cursor: pointer;
+}
+.menu a + a {
+  position: absolute;
+  top: 0; left: 0;
+  font-size: 57px;
+  opacity: 0;
+  
+  transition: .2s;
+}
+.menu:hover a:first-child {
   display: none;
 }
-.popUp #menuPop:checked + label + .bgBox > .nav_container > #gnb > li > a {
-  display: block;
+.menu:hover a + a {
+  opacity: 100;
 }
-
-/* 메뉴 타이틀 */
-.nav_container #gnb #about::before {
-  content: "ABOUT US";
+.txt_front .gnb li:nth-of-type(1) .menu{ 
+  width:390px;
 }
-.nav_container #gnb #service::before {
-  content: "ONLINE SERVICE";
+.txt_front .gnb li:nth-of-type(2) .menu{ 
+  width:565px;
 }
-.nav_container #gnb #client::before {
-  content: "CLIENT";
+.txt_front .gnb li:nth-of-type(3) .menu{ 
+  width:330px;
 }
-.nav_container #gnb #blog::before {
-  content: "BLOG";
+.txt_front .gnb li:nth-of-type(4) .menu{ 
+  width:200px;
 }
-.nav_container #gnb #contact::before {
-  content: "CONTACT US";
+.txt_front .gnb li:nth-of-type(5) .menu{ 
+  width:330px;
 }
-
-.nav_container #gnb #about:hover::before {
-  content: "회사소개";
-}
-.nav_container #gnb #service:hover::before {
-  content: "비대면 서비스";
-}
-.nav_container #gnb #client:hover::before {
-  content: "함께하는 고객";
-}
-.nav_container #gnb #blog:hover::before {
-  content: "블로그";
-}
-.nav_container #gnb #contact:hover::before {
-  content: "문의";
-}
-
-.nav_container #gnb a:hover {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 800;
-  font-size: 60px;
-}
-.nav_container #gnb li {
-  margin-bottom: 20px;
-  
-}
-
-/* sns */
-.nav_container #gnb .sns {
+/* 팝업 sns 정렬 */
+.nav_container .gnb .sns {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 250px;
 }
-
-
-.nav_container #gnb .sns li a {
-  display: block;
+/* 팝업 sns 디자인 */
+.nav_container .gnb .sns li a {
   width: 40px; height: 40px;
   border-radius: 50%;
   margin-top: 10px;
+  display: none;
 }
-
-
+/* 팝업 sns 이미지&호버 */
 #facebook {
   background: url(../images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
 }
@@ -237,6 +231,11 @@ h1 {
 #brunch:hover {
   background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
+/* 메인 팝업 sns 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container .gnb .sns a {
+  display: block;
+}
+  /* 팝업 css */
 
 
 

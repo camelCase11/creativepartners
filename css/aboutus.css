@@ -395,6 +395,9 @@ header #charIcon {
 
 
 /* slide */
+.slide_section {
+  position: relative;
+}
 .slide_section input[name="slide"] {
   display: none;
 }
@@ -410,7 +413,6 @@ header #charIcon {
   vertical-align: middle;
   width: 100%;
   transition: all .5s;
-  ;
 }
 .slide_section .slidelist li a {
   display: block;
@@ -423,36 +425,61 @@ header #charIcon {
 }
 
 
+.slide_section [id="slide1"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.slide_section [id="slide2"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.slide_section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.slide_section [id="slide4"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+
+
+
 
 
 /* label */
-/* .slide_section .slidelist label {
-  position: relative;
-  top: 60px; right: 100%;
+.slide_section .slidelist .slide_control {
+  width: 200px; height: 50px;
+  position: absolute;
+  bottom: -17px;
+} 
+.slide_section .slidelist .slide_control .control label {
   padding: 10px;
   cursor: pointer;
 }
-.slide_section .slidelist .left {
+.slide_section .slidelist .slide_control .control .left {
   background: url(../images/aboutUs_img/arrow_left.svg) no-repeat center center / 90%;
   
 }
-.slide_section .slidelist .right {
+.slide_section .slidelist .slide_control .control .right {
   background: url(../images/aboutUs_img/arrow_right.svg) no-repeat center center / 90%;
   margin-left: 25px;
   right: 100%;
-}  */
+}
 
 
-/* .slide_section [id="slide1"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
-.slide_section [id="slide2"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
-.slide_section [id="slide3"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
-.slide_section [id="slide4"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);} */
+
+
+.slide_section .slide_control [class="control"] {
+  display: none;
+}
+.slide_section [id="slide1"]:checked ~ .slidelist .slidewrap .control1 {
+  display: block;
+}
+.slide_section [id="slide2"]:checked ~ .slidelist .slidewrap .control2 {
+  display: block;
+}
+.slide_section [id="slide3"]:checked ~ .slidelist .slidewrap .control3 {
+  display: block;
+}
+.slide_section [id="slide4"]:checked ~ .slidelist .slidewrap .control4 {
+  display: block;
+}
+
+
 
 
 
 /*  자동슬라이드 */
 
-@keyframes move {
+/* @keyframes move {
   0% {transform: translateX(0);}
   25% {transform: translateX(-100%);}
   50% {transform: translateX(-200%);}
@@ -461,20 +488,20 @@ header #charIcon {
   
 }
 
-.slidelist {
+.slidelist li {
   animation-name: move;
   animation-delay: 2s;
   animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-}
+} */
 
 
 
 
 /* button */
 
-#arrowLeft {
+/* #arrowLeft {
   position: relative;
   bottom: 5px;
 }
@@ -482,9 +509,19 @@ header #charIcon {
   position: relative;
   bottom: 5px;
   left: 36px;
+} */
+
+
+
+/* .slide_section .slidelist::-webkit-scrollbar { 
+  width:100px; height: 7px;
 }
-
-
+.slide_section .slidelist::-webkit-scrollbar-track {
+  background: #cbddff;
+}
+.slide_section .slidelist::-webkit-scrollbar-thumb {
+  background: #003dab;
+} */
 
 
 

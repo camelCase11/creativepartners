@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* header */
 
 header {
@@ -47,12 +46,16 @@ header {
   .subTitleWrap {
     max-width: 1230px;
     margin: 0 auto;
-    padding: 110px 15px 0;
+    padding: 100px 30px 0;
+  }
+  .subTitleWrap p {
+    word-spacing: -1px;
   }
   h1 {
-    font-family: 'Red Hat Display',sans-serif;
-    font-size: 60px;
+    font-family: "Noto Sans KR",sans-serif;
+    font-size: 42px;
     font-weight: 700;
+    word-spacing: -1.5px;
   }
   .sub_gnb {
     width: 1200px; height: 168px;
@@ -65,116 +68,159 @@ header {
     clear: both;
   }
 
-  
-/* main.contact */
-.container {
-  width: 100%;
-  background-color: #fff;
-  position: relative;
-  z-index: 99;
+/* main */
+  .container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 99;
+}
+main {
+  width: 1094px;
+  height: 734px;
+  margin: 0  auto;
+  padding: 108px 0 160px;
+}
+.main_box1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+} 
+
+main a {
+  color: #222222; text-decoration: underline;
+  font-weight: 500;
+  letter-spacing: -0.5px;
 }
 
-.main_contact {
-  margin: 0px auto 160px;
-  max-width: 1224px;
+
+/* 텍스트 영역 */
+.wrapper1 {
+  width: 547px; height: 370px;
   padding: 12px;
-  padding-top: 100px; 
-  height: 948px;
-  font-family: 'Noto Sans KR',sans-serif;
 }
-.main_flex {
-  display: flex;
-  margin-bottom: 80px;
-}
-.contact_title {
-  width: 600px;
-}
-.contact_txt {
-  font-size: 32px;
-  margin: 0 0 40px;
-  width: 498px;
-  letter-spacing: 0.1px;
-  word-spacing: -2.5px;
-}
-.contact_txt .title_txt {
-  font-weight: 700;
-}
-.contact_button {
-  width: 600px;
-}
-.contact_button a {
-  font-weight: 600;
-  display: block;
-  float: left;
-  margin: 0 30px 0 0;
-  position: relative;
-}
-.contact_button .txt1 {
-  font-size: 16px;
-  color: #fff;
-  background-color: #003dab;
-  border-radius: 4px;
-  width: 200px; height: 48px;
-  line-height: 48px;
-  padding-left: 30px;
-  font-weight: 400;
-}
-.contact_button img {
-  width: 15px; height: 10px;
-  margin: 0 0 0 5px; 
-  display: block;
-  position: absolute;
-  top: 20px; left: 148px;
-}
-.contact_button .txt2 img {
-  left: 143px;
-}
-.contact_button .txt2 {
-  font-size: 16px;
-  color: #003dab;
-  background-color: #ecf4ff;
-  border-radius: 4px;
-  width: 200px; height: 48px;
-  line-height: 48px;
-  padding-left: 33px;
-  font-weight: 400;
-}
-.contact_middle {
-  width: 600px;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  margin-top: 20px;
-  font-weight: 300;
-  
-}
-.middle_off span {
-  font-family: 'Noto Sans KR',sans-serif;
-}
-.contact_middle p {
-  font-size: 14px;
-  color: #a2a2a2;
+.txt_box1 {
+  width: 523px; height: 73px;
+  font-size: 28px; margin: 20px 0;
+  line-height: 1.3;
   font-weight: 500;
 }
-.middle_off { 
-  margin-bottom: 7px;
+.txt_box1 span {
+  font-weight: 700;
 }
-.map_sec {
-  width: 1200px; height: 540px;
+.txt_box2 {
+  font-size: 16px;
+  color: #222;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
-.map_sec img {
-  transition: 1s;
-}
-.map_sec:hover img {
-  transform: scale(1.2);
-}
-/* main-contact */
 
 
+/* 작성란 */
+main .wrapper2 {
+  width: 547px; height: 370px;
+  padding: 12px;
+}
+main form {
+  padding: 0;
+  height: 346px;
+  position: relative;
+}
+main .fid_box {
+  width: 523px; height: 346px;
+  display: flex;
+  flex-flow: column wrap;
+  
+  border: 1px solid #e2e2e2;
+  border-radius: 7px;
+  padding: 60px;
+
+}
+main .fid_box input {
+  padding: 18.5px 14px;
+}
+main .fid_box input::placeholder {
+  color: #a2a2a2;
+  font-weight: 700;
+  letter-spacing: -1px;
+  
+}
+main .fid_box .a_la {
+  position: absolute;
+  top: 265px; left: 71px;
+}
+main input[type=text], input[type=tel], input[type=email] {
+ height: 54px; width: 401px;
+ border: 1px solid #e2e2e2;
+ border-radius: 7px;
+ /* padding: 60px; */
+ margin-bottom: 8px;
+ flex-direction: column;
+}
 
 
+/* 체크박스영역 */
+main .text span {
+  color: #ff0202;
+}
+/* main form{ padding: 10px; } */
+main .circle{
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 16px; height: 16px;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative; top: 2px; left: -5px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+
+  background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #chk:checked + .circle{
+  background-color: navy;
+  border-color: navy;
+  background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+}
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+main #chk{ position: absolute; left: -999em; }
+
+
+/* 다음단계 */
+.main_box2 {
+  height: 48px; width: 1082px;
+}
+.wrapper3 {
+  width: 1082px; height: 48px;
+  margin-top: 58px;
+  display: flex;
+  justify-content: flex-end;
+  min-width: auto;
+}
+
+.wrapper3 input {
+  color: #b4b4b4;
+  background-color: #e4e4e4;
+  padding: 9px 40px 9px 24px;
+  border-radius: 6px;
+  letter-spacing: 0.02857em;
+  font-weight: 600;
+  line-height: 1.75;
+  font-size: 16px;
+  box-shadow: none;
+  cursor: default;
+  pointer-events: none;
+  border: none;
+
+  background: #e4e4e4 url(./images/je-main/회색회살표.png) no-repeat 95px / 15px 10px; 
+
+}
   /* footer */
-  body {
-    font-family: "Noto Sans KR", "Poppins", "Red Hat Display" ,sans-serif;
+
+body {
+    font-family: "Noto Sans KR", "Poppins", "Red Hat Display:wght@700" ,sans-serif;
   }
   .clearfix::after {
     content: "";

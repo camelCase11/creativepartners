@@ -8,9 +8,9 @@
         <meta name="keywords" content="웹, website, camelCase, team1_project, 크리에이티브파트너스, creativepartners">
 
         <!-- og -->
-        <meta property ="og:title" content="크리에이티브 파트너스 | 스타트업, 크리에이터를 위한 세무회계 컨설팅펌">
-        <meta property ="og:url" content="https://camelcase11.github.io/creativepartners/service.html">
-        <meta property ="og:image" content="./images/og_img/og_img.png">
+        <meta property ="og:title" content="team1_camelCase">
+        <meta property ="og:url" content="https://camelcase11.github.io/creativepartners/contact.html">
+        <meta property ="og:image" content="images/je-main/ogimg.png">
         <meta property ="og:description" content="꿈을 향해 나아가는 크리에이터와 스타트업의 성공을 위해 세무 회계 서비스를 넘어 투자 유치, 정부지원사업, 자금 조달 전략 등 원스톱 경영 컨설팅 서비스를 제공합니다">
         <meta property ="og:type" content="website">
 
@@ -26,8 +26,8 @@
         <!-- fonts -->
         <link rel="stylesheet" href="./fonts/font.css">
 
-        <!-- sub.service -->
-        <link rel="stylesheet" href="./css/service.css">
+        <!-- sub.contact -->
+        <link rel="stylesheet" href="./css/service_alink.css">
         <style>
             /*  Noto Sans KR, poppins, Red Hat Display 구글 폰트 */
         </style>
@@ -38,7 +38,6 @@
             <a href="./index.html" id="head_logo">
               <img src="./images/header_img/logo.svg" alt="로고">
             </a>
-
         <!-- 팝업 (메뉴 포함) -->
         <div class="pub">
             <!-- on/off 체크박스 -->
@@ -111,57 +110,57 @@
     
             <div class="sub_title">
               <div class="subTitleWrap">
-                <h1>ONLINE SERVICE</h1>
+                <p>종합소득세 신고 견적 신청</p>
+                <h1>종합소득세 신고하기</h1>
               </div>
             </div>
         </header> 
 
-        <!-- main.service -->
         <div class="container">
+
+            <!-- main -->
             <main>
-                <div class="service">
-                    <div class="med1">
-                        <div class="main_txt">
-                            성공을 향한 여정,<br>
-                            크리에이티브 파트너스와 시작하세요.<br>
-                            <span>쉽고 간편한 온라인 서비스를 제공</span>합니다.
-                        </div>
+            <div class="main_box1">
+                <div class="wrapper1">
+                    <div class="txt_box1">
+                        <div class="txt_title">정확하게<br>
+                        <span>연락처를 입력해주세요.</span></div>
                     </div>
-                    <div class="con clearfix">
-                        <div class="box main_img_txt1">
-                            <img src="./images/je-main/종합소득세신고.svg" alt="종합소득세신고">
-                            <div class="txt1">
-                                <span>#빠르고_편하게</span><span>#꼼꼼하고_정확하게</span><span>#신고_환급까지</span>
-                                <div class="txt_h">종합소득세 신고</div>
-                                <div class="alink">
-                                    <a href="./service_alink.html" target="_blank">서비스 신청하기<img src="./images/je-main/서비스신청하기.png" alt="화살표링크"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box main_img_txt2">
-                            <img src="./images/je-main/법인세환급금사전검토.webp" alt="법인세환급금사전검토">
-                            <div class="txt1">
-                                <span>#법인세_경정청구</span><span>#법인세_환급</span><span>#환급금_조회</span>
-                                <div class="txt_h">법인세 환급금 사전검토</div>
-                                <div class="alink">
-                                    <a href="https://www.wetax.go.kr/main/?cmd=LPEPCC0R7" target="_blank">서비스 신청하기<img src="./images/je-main/서비스신청하기.png" alt="화살표링크"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box main_img_txt3">
-                            <img src="./images/je-main/정부지원금회계감사.svg" alt="정부지원금 회계감사">
-                            <div class="txt1">
-                                <span>#회계감사_보고서_작성</span><span>#온라인_비대면_회계감사</span>
-                                <div class="txt_h">정부지원금 회계감사</div>
-                                <div class="alink">
-                                    <a href="https://brunch.co.kr/@cppartners/24" target="_blank">서비스 신청하기<img src="./images/je-main/서비스신청하기.png" alt="화살표링크"></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="txt_box2">
+                        <div class="txt_mi">입력하신 연락처로 모든 진행사항이 안내됩니다.<br>
+                        이름과 이메일, 휴대폰 번호를 정확하게 입력해주세요.</div>
                     </div>
                 </div>
+                <div class="wrapper2">
+                    <div class="inputbox">
+                        <form>
+                            <div class="fid_box">
+                                <input type="text" name="user_name" id="user_name" required="required" placeholder="이름(실명)"  autofocus>
+
+                                <input type="tel" name="user_tel" id="user_tel" required placeholder="휴대폰 번호" autofocus>
+
+                                <input type="email" name="user_email" id="user_email" placeholder="이메일" required autofocus>
+
+                                <form action="#">
+                                    <label for="chk" class="a_la">
+                                      <input type="checkbox" id="chk">
+                                      <i class="circle"></i>
+                                      <span class="text"><a href="https://creativepartners.co.kr/privacy/policy" target="_blank">개인정보 수집 및 이용</a>에 동의합니다.<span>(필수)</span></span>
+                                    </label>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="main_box2">
+                <div class="wrapper3">
+                    <div class="next_box">
+                        <input type="button" value="다음단계">
+                    </div>
+                </div>
+            </div>
             </main>
-            <!-- main.service -->
 
 
             <!-- footer -->
@@ -230,5 +229,6 @@
             </footer>
             <!-- footer -->
         </div>
+        
     </body>
 </html>

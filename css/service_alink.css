@@ -1,0 +1,515 @@
+@charset "utf-8";
+/* header */
+
+header {
+  width: 100%; height: 259px;
+  background-color: #f3f6f9;
+}
+header #head_logo {/*로고*/
+  width: 140px; height: 36px;
+  position: fixed;
+  top:40px; left:40px;
+  cursor: pointer;
+  z-index: 9998;
+}
+header #charIcon { /* 버튼2 */
+  position: fixed;
+  bottom: 1.5%; right: 1.5%;
+  width: 60px; height: 60px;
+  background: #ddd url(../images/mainPage_img/charIcon.png) no-repeat center / 80%;
+  border-radius: 42%;
+  display: block;
+  z-index: 9997;
+}
+/* 팝업 css */
+
+/* 팝업 on /off 체크박스 */
+.pub #menuPop {
+display: none;
+}
+/* 우측 상단 메뉴 btn */
+.pub .menuPop {
+display: block;
+width: 42px; height: 42px; border-radius: 50%;
+background: #fff no-repeat url(../images/header_img/front_menuicon.png) center ;
+box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
+position: fixed;
+top: 40px; right: 40px;
+z-index: 9998;
+box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.16);
+}
+/* 메뉴 btn 호버 */
+.pub .menuPop:hover {
+cursor: pointer;
+background: #003DAB url(../images/header_img/front_menuicon_hover.png) no-repeat center;
+}
+/* 팝업 반투명 bg */
+.pub #menuPop:checked + label + .bgBox {
+background-color: #000000ef;
+width: 100%; height: 100vh;
+position: fixed; top: 0; left: 0;
+z-index: 9998;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* 팝업 close btn */
+.pub #menuPop:checked + label + .bgBox > .menuPopDown { display: block; }
+
+/* 팝업 close btn */
+.pub .menuPopDown{
+width:42px; height:42px;
+border-radius:50%;
+background: #fff;
+content: url(../images/nav_img/exitIcon.svg);
+cursor: pointer;
+display: none;
+
+position: fixed;
+top: 40px; right: 40px;
+z-index: 9999;
+}
+/* 팝업 close btn hover */
+.pub .menuPopDown:hover{
+background-color: #003DAB;
+content: url(../images/nav_img/exitIcon_hover.svg);
+}
+/*팝업 로고 hide */
+header #pop_logo {
+width:146px; height: 36px;
+
+position: fixed;
+top:40px; left:40px;
+z-index: 9999;
+
+cursor: pointer;
+display: none;
+}
+/* 팝업 로고 pop */
+.pub #menuPop:checked + label + .bgBox > #pop_logo { display: block; }
+
+/* 팝업 gnb 컨테이너 */
+.pub .bgBox .nav_container {
+position: absolute;
+display: none;
+}
+/* 팝업 메뉴 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container {
+display: block;
+}
+/* gnb 공용 */
+header .gnb {
+font-family: 'Red Hat Display', 'Noto Sans KR', sans-serif;
+font-size: 66px; font-weight: 900;
+}
+/* 팝업 gnb 정렬 */
+.pub .bgBox .nav_container .gnb {
+width: 650px; height: 580px;
+display: flex;
+flex-flow: column nowrap;
+justify-content: space-between;
+}
+.pub .bgBox .nav_container .gnb li {
+display: flex;
+justify-content: space-around;
+}
+.pub .bgBox .nav_container .gnb li .menu {
+width: 100%;
+text-align: center;
+}
+.pub .bgBox .nav_container .gnb li .menu a + a {
+width: 561px;
+top: 0; left: 50%;
+transform: translate(-50%);
+} 
+.menu {
+position: relative;
+height: 87px;
+cursor: pointer;
+}
+.menu a + a {
+position: absolute;
+top: 0; left: 0;
+font-size: 57px;
+opacity: 0;
+
+transition: .2s;
+}
+.menu:hover a:first-child {
+display: none;
+}
+.menu:hover a + a {
+opacity: 100;
+}
+.txt_front .gnb li:nth-of-type(1) .menu{ 
+width:390px;
+}
+.txt_front .gnb li:nth-of-type(2) .menu{ 
+width:565px;
+}
+.txt_front .gnb li:nth-of-type(3) .menu{ 
+width:330px;
+}
+.txt_front .gnb li:nth-of-type(4) .menu{ 
+width:200px;
+}
+.txt_front .gnb li:nth-of-type(5) .menu{ 
+width:330px;
+}
+/* 팝업 sns 정렬 */
+.nav_container .gnb .sns {
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 250px;
+}
+/* 팝업 sns 디자인 */
+.nav_container .gnb .sns li a {
+width: 40px; height: 40px;
+border-radius: 50%;
+margin-top: 10px;
+display: none;
+}
+/* 팝업 sns 이미지&호버 */
+#facebook {
+background: url(../images/nav_img/Facebook_Nav_Logo.png) no-repeat center;
+}
+#facebook:hover {
+background: #003DAB url(../images/nav_img/Facebook_Nav_Logo_hover.png) no-repeat center;
+}
+#insta {
+background: url(../images/nav_img/Instagram_Nav_Logo.png) no-repeat center;
+}
+#insta:hover {
+background: #003DAB url(../images/nav_img/Instagram_Nav_Logo_hover.png) no-repeat center;
+}
+#youtube {
+background: url(../images/nav_img/Youtube_Nav_Logo.png) no-repeat center;
+}
+#youtube:hover {
+background: #003DAB url(../images/nav_img/Youtube_Nav_Logo_hover.png) no-repeat 55% 55%;
+}
+#brunch {
+background: url(../images/nav_img/Brunch_Nav_Logo.png) no-repeat center;
+}
+#brunch:hover {
+background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
+}
+/* 메인 팝업 sns 숨김 */
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container .gnb .sns a {
+display: block;
+}
+/* 팝업 css */ 
+  .sub_title {
+    width: 100%; height: 259px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9;
+  }
+  .subTitleWrap {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 100px 30px 0;
+  }
+  .subTitleWrap p {
+    word-spacing: -1px;
+  }
+  h1 {
+    font-family: "Noto Sans KR",sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    word-spacing: -1.5px;
+  }
+  .sub_gnb {
+    width: 1200px; height: 168px;
+    line-height: 168px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/* main */
+  .container {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 99;
+}
+main {
+  width: 1094px;
+  height: 734px;
+  margin: 0  auto;
+  padding: 108px 0 160px;
+}
+.main_box1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+} 
+
+main a {
+  color: #222222; text-decoration: underline;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+/* 텍스트 영역 */
+.wrapper1 {
+  width: 547px; height: 370px;
+  padding: 12px;
+}
+.txt_box1 {
+  width: 523px; height: 73px;
+  font-size: 28px; margin: 20px 0;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.txt_box1 span {
+  font-weight: 700;
+}
+.txt_box2 {
+  font-size: 16px;
+  color: #222;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+/* 작성란 */
+main .wrapper2 {
+  width: 547px; height: 370px;
+  padding: 12px;
+}
+main form {
+  padding: 0;
+  height: 346px;
+  position: relative;
+}
+main .fid_box {
+  width: 523px; height: 346px;
+  display: flex;
+  flex-flow: column wrap;
+  
+  border: 1px solid #e2e2e2;
+  border-radius: 7px;
+  padding: 60px;
+
+}
+main .fid_box input {
+  padding: 18.5px 14px;
+}
+main .fid_box input::placeholder {
+  color: #a2a2a2;
+  font-weight: 700;
+  letter-spacing: -1px;
+  
+}
+main .fid_box .a_la {
+  position: absolute;
+  top: 265px; left: 71px;
+}
+main input[type=text], input[type=tel], input[type=email] {
+ height: 54px; width: 401px;
+ border: 1px solid #e2e2e2;
+ border-radius: 7px;
+ /* padding: 60px; */
+ margin-bottom: 8px;
+ flex-direction: column;
+}
+
+
+/* 체크박스영역 */
+main .text span {
+  color: #ff0202;
+}
+/* main form{ padding: 10px; } */
+main .circle{
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 16px; height: 16px;
+  border: 2px solid #666;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative; top: 2px; left: -5px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+
+  background-image: url(https://blog.kakaocdn.net/dn/XTnSL/btrhtUIVtpB/5FungHN6IXVXG8bLbhE9Dk/img.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #chk:checked + .circle{
+  background-color: navy;
+  border-color: navy;
+  background-image: url(https://blog.kakaocdn.net/dn/t7a2D/btrhtVgLYmG/dUxzAkBy9hIZ4gHmyllQrk/img.png);
+}
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+main #chk{ position: absolute; left: -999em; }
+
+
+/* 다음단계 */
+.main_box2 {
+  height: 48px; width: 1082px;
+}
+.wrapper3 {
+  width: 1082px; height: 48px;
+  margin-top: 58px;
+  display: flex;
+  justify-content: flex-end;
+  min-width: auto;
+}
+
+.wrapper3 input {
+  color: #b4b4b4;
+  background-color: #e4e4e4;
+  padding: 9px 40px 9px 24px;
+  border-radius: 6px;
+  letter-spacing: 0.02857em;
+  font-weight: 600;
+  line-height: 1.75;
+  font-size: 16px;
+  box-shadow: none;
+  cursor: default;
+  pointer-events: none;
+  border: none;
+
+  background: #e4e4e4 url(./images/je-main/회색회살표.png) no-repeat 95px / 15px 10px; 
+
+}
+/* footer */
+
+body {
+  font-family: "Noto Sans KR", "Poppins", "Red Hat Display:wght@700" ,sans-serif;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+footer {
+  background-color: #222222;
+  width: 100%;
+}
+footer .wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+footer .wrapper .marginbox {
+  width: 50px;
+  margin: 0;
+  float: left;
+}
+.footbox1 {
+  width: 510px;
+  float: left;
+  margin: 0 100px 50px 0;
+}
+.footlogo {
+  display: block;
+  width: 500px;
+  font-size: 52px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  background: url(../images/footer_img/footer_arrow.png) no-repeat 290px center / 40px;
+}
+.footlogo:hover {
+  color: #003DAB;
+  background: url(../images/footer_img/footer_arrowBlue.png) no-repeat 290px center / 40px;
+}
+.footbox1 p {
+  color: #7a7a7a;
+  margin-top: 20px;
+}
+.footNav li {
+  float: left;
+}
+.footNav li a {
+  display: block;
+  width: 150px;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 7px;
+  margin: 25px 20px 0 0;
+  font-size: 14px;
+  background: url(../images/footer_img/footer_Link_icon.png) no-repeat 90% 50% / 14px;
+}
+.footNav li:nth-child(3) a {
+  background: url(../images/footer_img/footer_Link_Down_Arrow.png) no-repeat 90% 50% / 7px;
+}
+.marginbox {
+  width: 100px; height: 50px;
+  background-color: red;
+  float: left;
+}
+.footbox2 {
+  width: 490px;
+  float: left;
+  margin-bottom: 50px;
+}
+.footbox2 {
+  color: #ddd;
+}
+.footSns li {
+  float: left;
+}
+.footSns li a {
+  display: block;
+  width: 36px; height: 36px;
+  background-color: #ddd;
+  margin: 0 10px 30px 0;
+  border-radius: 50%;
+  padding: 8px;
+}
+.footSns li a img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+}
+.footbox2 h3 {
+  color: #ddd;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footbox2 p {
+  color: #7A7A7A;
+  font-size: 14px; font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.footbox2 a:last-child {
+  font-size: 13px;
+  color: #ddd;
+}
+.copy {
+  width: 100%;
+  color: #7a7a7a;
+  border-top: 1px outset #444;
+  padding: 12px 0;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.copy p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  float: left;
+}
+.copy a {
+  display: block;
+  font-family: 'Poppins', sans-serif; font-size: 14px;
+  width: 40px;
+  background: url(../images/footer_img/footer_chevron-up.png) no-repeat 90% 50% / 6px;
+  float: right;
+}

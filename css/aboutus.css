@@ -473,20 +473,20 @@ header #charIcon {
 
 
 /* label */
-.slide_section .slidelist .slide_control {
+.slide_section .slide_control {
   width: 200px; height: 50px;
   position: absolute;
-  bottom: -17px;
+  bottom: -5px;
 } 
-.slide_section .slidelist .slide_control label {
+.slide_section .slide_control label {
   padding: 10px;
   cursor: pointer;
 }
-.slide_section .slidelist .slide_control .left {
+.slide_section .slide_control .left {
   background: url(../images/aboutUs_img/arrow_left.svg) no-repeat center center / 90%;
   
 }
-.slide_section .slidelist .slide_control .right {
+.slide_section .slide_control .right {
   background: url(../images/aboutUs_img/arrow_right.svg) no-repeat center center / 90%;
   margin-left: 25px;
   right: 100%;
@@ -498,16 +498,16 @@ header #charIcon {
 .slide_section .slide_control [class*="control"] {
   display: none;
 }
-.slide_section [id="slide1"]:checked ~ .slidewrap .slidelist .slide_control .control1 {
+.slide_section [id="slide1"]:checked ~ .slidewrap .slide_control .control1 {
   display: block;
 }
-.slide_section [id="slide2"]:checked ~ .slidewrap .slidelist .slide_control .control2 {
+.slide_section [id="slide2"]:checked ~ .slidewrap .slide_control .control2 {
   display: block;
 }
-.slide_section [id="slide3"]:checked ~ .slidewrap .slidelist .slide_control .control3 {
+.slide_section [id="slide3"]:checked ~ .slidewrap .slide_control .control3 {
   display: block;
 }
-.slide_section [id="slide4"]:checked ~ .slidewrap .slidelist .slide_control .control4 {
+.slide_section [id="slide4"]:checked ~ .slidewrap .slide_control .control4 {
   display: block;
 }
 

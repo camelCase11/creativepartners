@@ -122,11 +122,6 @@ header #pop_logo {
 /* 팝업 gnb 컨테이너 */
 .pub .bgBox .nav_container {
   position: absolute;
-  display: none;
-}
-/* 팝업 메뉴 숨김 */
-.pub #menuPop:checked + .menuPop + .bgBox > .nav_container {
-  display: block;
 }
 /* gnb 공용 */
 header .gnb {
@@ -135,24 +130,15 @@ header .gnb {
 }
 /* 팝업 gnb 정렬 */
 .pub .bgBox .nav_container .gnb {
-  height: 580px;
+  width: 650px; height: 580px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  align-items: center;
 }
-.pub .bgBox .nav_container .gnb li {
-  display: flex;
-  justify-content: space-around;
+.pub .bgBox .nav_container .gnb > li > a {
+  height: 87px;
 }
-.pub .bgBox .nav_container .gnb li .menu {
-  width: 100%;
-  text-align: center;
-}
-.pub .bgBox .nav_container .gnb li .menu a + a {
-  width: 561px;
-  top: 0; left: 50%;
-  transform: translate(-50%);
-} 
 /* 팝업 sns 정렬 */
 .nav_container .gnb .sns {
   display: flex;
@@ -193,7 +179,7 @@ header .gnb {
   background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
 /* 메인 팝업 sns 숨김 */
-.pub #menuPop:checked + .menuPop + .bgBox > .nav_container .gnb .sns a {
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container li a {
   display: block;
 }
 
@@ -222,45 +208,60 @@ header p {
   line-height: 1.3;
   margin-bottom: 40px;
 }
-.gnb {
-  height: 470px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-}
-.menu {
-  position: relative;
+header .txt_front .gnb a {
+  display: block;
   height: 87px;
-  cursor: pointer;
+  margin-bottom: 10px;
 }
-.menu a + a {
-  position: absolute;
-  top: 0; left: 0;
+.gnb a:hover {
+  font-weight: 800;
   font-size: 57px;
-  opacity: 0;
-  
-  transition: .1s;
 }
-.menu:hover a:first-child {
-  display: none;
+
+.gnb .about::before {
+  content: "ABOUT US";
 }
-.menu:hover a + a {
-  opacity: 100;
+.gnb .about:hover::before {
+  content: "회사소개";
 }
-.txt_front .gnb li:nth-of-type(1) .menu{ 
-  width:390px;
+.gnb .service::before {
+  content: "ONLINE SERVICE";
 }
-.txt_front .gnb li:nth-of-type(2) .menu{ 
-  width:565px;
+.gnb .service:hover::before {
+  content: "비대면 서비스";
 }
-.txt_front .gnb li:nth-of-type(3) .menu{ 
-  width:330px;
+.gnb .client::before {
+  content: "CLIENT";
 }
-.txt_front .gnb li:nth-of-type(4) .menu{ 
-  width:200px;
+.gnb .client:hover::before {
+  content: "함께하는 고객";
 }
-.txt_front .gnb li:nth-of-type(5) .menu{ 
-  width:430px;
+ .gnb .blog::before {
+  content: "BLOG";
+}
+.gnb .blog:hover::before {
+  content: "블로그";
+}
+.gnb .contact::before {
+  content: "CONTACT US";
+}
+.gnb .contact:hover::before {
+  content: "문의";
+}
+header .wrapper .gnb li:nth-of-type(1) a{ 
+  width:395px;
+}
+header .wrapper .gnb li:nth-of-type(2) a{ 
+  width:638px;
+}
+header .wrapper .gnb li:nth-of-type(3) a{ 
+  width:378px;
+}
+header .wrapper .gnb li:nth-of-type(4) a{ 
+  width:250px;
+}
+header .wrapper .gnb li:nth-of-type(5) a{ 
+  width:500px;
 }
 
 

@@ -138,53 +138,45 @@ header .gnb {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  align-items: center;
 }
-.pub .bgBox .nav_container .gnb li {
-  display: flex;
-  justify-content: space-around;
-}
-.pub .bgBox .nav_container .gnb li .menu {
-  width: 100%;
-  text-align: center;
-}
-.pub .bgBox .nav_container .gnb li .menu a + a {
-  width: 561px;
-  top: 0; left: 50%;
-  transform: translate(-50%);
-} 
-.menu {
-  position: relative;
+.pub .bgBox .nav_container .gnb > li > a {
   height: 87px;
-  cursor: pointer;
 }
-.menu a + a {
-  position: absolute;
-  top: 0; left: 0;
-  font-size: 57px;
-  opacity: 0;
-  
-  transition: .2s;
+.gnb a:hover {
+  font-weight: 800;
+  font-size: 60px;
 }
-.menu:hover a:first-child {
-  display: none;
+
+.gnb .about::before {
+  content: "ABOUT US";
 }
-.menu:hover a + a {
-  opacity: 100;
+.gnb .about:hover::before {
+  content: "회사소개";
 }
-.txt_front .gnb li:nth-of-type(1) .menu{ 
-  width:390px;
+.gnb .service::before {
+  content: "ONLINE SERVICE";
 }
-.txt_front .gnb li:nth-of-type(2) .menu{ 
-  width:565px;
+.gnb .service:hover::before {
+  content: "비대면 서비스";
 }
-.txt_front .gnb li:nth-of-type(3) .menu{ 
-  width:330px;
+.gnb .client::before {
+  content: "CLIENT";
 }
-.txt_front .gnb li:nth-of-type(4) .menu{ 
-  width:200px;
+.gnb .client:hover::before {
+  content: "함께하는 고객";
 }
-.txt_front .gnb li:nth-of-type(5) .menu{ 
-  width:330px;
+ .gnb .blog::before {
+  content: "BLOG";
+}
+.gnb .blog:hover::before {
+  content: "블로그";
+}
+.gnb .contact::before {
+  content: "CONTACT US";
+}
+.gnb .contact:hover::before {
+  content: "문의";
 }
 /* 팝업 sns 정렬 */
 .nav_container .gnb .sns {
@@ -226,10 +218,9 @@ header .gnb {
   background: #003DAB url(../images/nav_img/Brunch_Nav_Logo_hover.png) no-repeat center;
 }
 /* 메인 팝업 sns 숨김 */
-.pub #menuPop:checked + .menuPop + .bgBox > .nav_container .gnb .sns a {
+.pub #menuPop:checked + .menuPop + .bgBox > .nav_container li a {
   display: block;
 }
-  /* 팝업 css */ 
 
 
 /* ============ main ============== */

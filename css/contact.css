@@ -115,6 +115,10 @@ header .gnb {
 .pub .bgBox .nav_container .gnb > li > a {
   height: 87px;
 }
+.gnb a:hover {
+  font-weight: 800;
+  font-size: 57px;
+}
 .gnb .about::before {
   content: "ABOUT US";
 }

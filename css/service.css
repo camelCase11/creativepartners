@@ -11,7 +11,7 @@ header {
     position: fixed;
     top:40px; left:40px;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9998;
   }
   header #charIcon { /* 버튼2 */
     position: fixed;

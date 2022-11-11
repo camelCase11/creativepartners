@@ -371,7 +371,7 @@ main #chk{ position: absolute; left: -999em; }
   pointer-events: none;
   border: none;
 
-  background: #e4e4e4 url(./images/je-main/회색회살표.png) no-repeat 95px / 15px 10px; 
+  background: #e4e4e4 url(../images/je-main/회색회살표.png) no-repeat 95px / 15px 10px; 
 
 }
 /* footer */
